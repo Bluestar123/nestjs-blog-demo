@@ -6,12 +6,12 @@ import * as mongoose from 'mongoose';
 import { ValidationPipe } from '@nestjs/common';
 
 async function bootstrap() {
-  mongoose.connect('mongodb://localhost/nest-blog-api', {
-    // 参数防止报异常
-    useNewUrlParser: true,
-    useFindAndModify: false,
-    useCreateIndex: true,
-  });
+  // mongoose.connect('mongodb://localhost/nest-blog-api', {
+  //   // 参数防止报异常
+  //   useNewUrlParser: true,
+  //   useFindAndModify: false,
+  //   useCreateIndex: true,
+  // });
 
   const app = await NestFactory.create(AppModule);
   // 全局验证
